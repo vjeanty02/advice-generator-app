@@ -66,3 +66,14 @@
   grid-column-gap: $gap;
   grid-row-gap: $gap;
 }
+@mixin btn--animation($opacity, $scale) /* transition */
+{
+  cursor: pointer;
+  transition: all 300ms;
+  box-shadow: 4px 4px 8px -2px #d0d0d0;
+  &:hover {
+    transform: scale($scale);
+    opacity:$opacity;
+    box-shadow: 4px 4px 8px -2px darken(#d0d0d0,20%);
+  }
+}
