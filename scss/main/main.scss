@@ -1,0 +1,13 @@
+@use "../abstracts/mixins.scss" as mx;
+@use "../components/components.scss" as cp;
+
+body
+{
+    @include mx.flex-column-center($gap:0px);
+}
+main
+{
+    max-width: ;
+    @include mx.flex-column($gap:40px);
+    @include cp.container($border:5px, $background:blue, $padding:50px, $margin:auto)
+}
